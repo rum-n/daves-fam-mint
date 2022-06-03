@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+    font-family: 'eurostile';
+    src: url('../fonts/EurostileExtended-Black.woff') format('woff'),
+         url('../fonts/EurostileExtended-Black.woff2') format('woff2');
+}
+
+:root {
+    --main-color: #d02a2a;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/lab.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 760px){
+    body{
+        background-image: none;
+    }
+}
+
+.bg-semi-transparent{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.button.default{
+    background-color: #ffffff;
+    color: #000;
+    padding: 8px 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button.secondary{
+    border: 1px solid #333;
+    background-color: #111;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    color: #888;
+}
+
+.button.secondary:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.input-qty{
+    border: 1px solid #333;
+    background-color: #111;
+    border-radius: 5px;
+    color: #888;
+    width: 100%;
+}
+
+.input-qty-label{
+    padding: 10px 10px;
+    border-right: 1px solid #333;
+}
+
+.input-qty input{
+    background: transparent;
+    margin-left: 10px;
+    padding: 10px 5px;
+    outline: none;
+}
+
+
+.col-1{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 1.3em;
+    font-family: eurostile, sans-serif;
+    margin-bottom: 1em;
+    line-height: 1.1em;
+    text-transform: uppercase;        
+}
+
+.radio-currency{
+    border: 1px solid #333;
+    background-color: #111;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    color: #888;
+    cursor: pointer;
+}
+
+.radio-currency:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+
+.radio-currency.active{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+
+.radio-currency span{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+}
+
+.radio-currency span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    border-radius: 50%;
+    display: block;
+    background-color: #000;
+    border: 1px solid #333;
+    width: 15px;
+    height: 15px;
+}
+
+.radio-currency.active span::before{
+    background-color: #bdaf00;
+}
+
+
+.intro{
+    font-family: Menlo, monospace;
+}
+
+.border-yellow{
+    border: 3px solid #BFCF42;
+    border-radius: 10px;
+}
+
+.border-blue{
+    border: 3px solid #768EBC;
+    border-radius: 10px;
+}
+
+
+#walletconnect-wrapper{
+    color: #000;
+}
